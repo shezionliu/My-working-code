@@ -23,6 +23,11 @@
 - git commit -m "描述提交的更改"
 ## 查看提交歷史：
 - git log
+- git log --oneline
+- git config --list
+
+## 比對版本差異
+- git diff "版本ID" "檔案名"
 
 # 分支操作
 ## 查看當前所有分支：
@@ -67,20 +72,26 @@
 - git tag
 
 # 撤銷操作
+
 ## 取消暫存區的更改：
 - git reset HEAD filename
 
 ## 取消工作區的更改：
-- git checkout -- filename
- 
+- git checkout "版本ID" -- 檔案名
+  *回溯完後必須再 git commit -m "修改說明"* 
+  這種作法會留下全部的修改歷程
 ## 回退到某個提交：
 - git revert commit_hash
 
 ## 強制回退到某個提交：
-- git reset --hard commit_hash
+- git reset --hard "版本ID"
+  這個做法會回溯到某個還原點並刪除該點之後的紀錄
 
 # GIT 文件狀態
 - Untracked   未追蹤
 - Tracked     追蹤
 - Staged      已暫存
 - Committed   已提交
+
+# 忽略不需要追蹤版本的文件
+- 建立一個檔名為".gitignore"的資料夾
