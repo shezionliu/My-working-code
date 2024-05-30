@@ -95,3 +95,6 @@
 
 # 忽略不需要追蹤版本的文件
 - 建立一個檔名為".gitignore"的檔案，將要忽略的檔案名稱寫在裡面 EX:*.json
+
+![開啟圖片](https://static.jyshare.com/images/runoob-logo.png "圖片")
+![開啟圖片](https://octodex.github.com/images/bannekat.png "圖片")
